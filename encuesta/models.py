@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Imagen(models.Model):
     """"Upload the image to be voted. The uploaded images are saved in a gallery"""
-    image = models.ImageField(upload_to = 'app', default = 'app/static/galaxias/img1.jpeg')
+    image = models.ImageField(upload_to = 'encuesta', default = 'img1.jpeg')
     name = models.CharField(max_length=200)
 
 class Choice(models.Model):
