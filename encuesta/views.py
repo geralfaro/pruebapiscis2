@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def pag_ppal(request):
+    return render(request, 'encuesta/pag_ppal.html')
