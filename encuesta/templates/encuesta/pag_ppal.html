@@ -1,6 +1,17 @@
 {% extends 'encuesta/base.html' %}
 
 {% block content %}
-    <h3><a href="">Encuesta</a></h3>
-    <p>¡Participe de la encuesta!</p>
+<!--    <div>
+	<img src="static/Scatter_Mh_vs_Ms.png" height=400 width=400>
+    </div> -->
+    <div>
+	<h2><a href="{% url 'contact_det' %}">Contactos</a></h2>
+	<p>¿Quienes somos?</p>
+    </div>
+    <div>
+	<h2><a href="{% url 'desc_det' %}">Descripción</a></h2>
+    </div>	
+	<h2><a href="{% url 'app_encuesta' %}">Encuesta</a></h2>
+	<p>¡Participe de la encuesta!</p>
+    </div>
 {% endblock %}
